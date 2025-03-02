@@ -3,7 +3,7 @@ exports.up = (pgm) => {
       id: 'id',
       title: { type: 'varchar(255)', notNull: true },
       completed: { type: 'boolean', notNull: true, default: false },
-      created_at: { type: 'timestamp', default: pgm.func('current_timestamp'), notNull: true },  // Adding created_at column
+      // Adding created_at column
     });
   };
   
